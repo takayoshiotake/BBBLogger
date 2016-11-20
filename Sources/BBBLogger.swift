@@ -99,7 +99,7 @@ public struct BBBLogger {
     ///   - format: the log message format
     ///   - arguments: the log message arguments
     ///   - function: the function the log occurred
-    ///   - file: the file that owns the function the log occurred
+    ///   - file: the file that contains the function the log occurred
     ///   - line: the line in the file the log occurred
     ///
     /// - Note:
