@@ -10,6 +10,7 @@
 		12D4D0A61DE0A3310075DEAB /* BBBLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12D4D09C1DE0A3310075DEAB /* BBBLogger.framework */; };
 		12D4D0B91DE0A3E10075DEAB /* BBBLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 12D4D0B71DE0A3E10075DEAB /* BBBLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		12D4D0C01DE0A4C50075DEAB /* BBBLoggerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D4D0BC1DE0A3E90075DEAB /* BBBLoggerTests.swift */; };
+		12D4D0C21DE0A5FA0075DEAB /* BBBLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D4D0C11DE0A5FA0075DEAB /* BBBLogger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		12D4D0B81DE0A3E10075DEAB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		12D4D0BC1DE0A3E90075DEAB /* BBBLoggerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBBLoggerTests.swift; sourceTree = "<group>"; };
 		12D4D0BD1DE0A3E90075DEAB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12D4D0C11DE0A5FA0075DEAB /* BBBLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBBLogger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				12D4D0B71DE0A3E10075DEAB /* BBBLogger.h */,
+				12D4D0C11DE0A5FA0075DEAB /* BBBLogger.swift */,
 				12D4D0B81DE0A3E10075DEAB /* Info.plist */,
 			);
 			path = Sources;
@@ -149,6 +152,7 @@
 					12D4D09B1DE0A3310075DEAB = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 78NCYGV39H;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 					12D4D0A41DE0A3310075DEAB = {
@@ -198,6 +202,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12D4D0C21DE0A5FA0075DEAB /* BBBLogger.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,6 +327,7 @@
 		12D4D0B11DE0A3310075DEAB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 78NCYGV39H;
@@ -335,6 +341,7 @@
 				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
 				PRODUCT_NAME = BBBLogger;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -342,6 +349,7 @@
 		12D4D0B21DE0A3310075DEAB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 78NCYGV39H;
@@ -362,6 +370,7 @@
 		12D4D0B41DE0A3310075DEAB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 78NCYGV39H;
 				INFOPLIST_FILE = "$(SRCROOT)/Tests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -374,6 +383,7 @@
 		12D4D0B51DE0A3310075DEAB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 78NCYGV39H;
 				INFOPLIST_FILE = "$(SRCROOT)/Tests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
