@@ -109,9 +109,9 @@ public struct BBBLogger {
     ///   - line
     public static func log(_ level: BBBLogLevel, _ format: String, _ arguments: CVarArg..., function: String = #function, file: String = #file, line: Int = #line) {
         let date = Date()
-        let point = String(format: format, arguments)
+        let message = String(format: format, arguments)
         serialQueue.async {
-            logOutput.log(level, date, BBBLogPoint(function: function, file: file, line: line), point)
+            logOutput.log(level, date, BBBLogPoint(function: function, file: file, line: line), message)
         }
     }
     
