@@ -36,10 +36,6 @@ class DocumentLogOutput: BBBLogOutput {
             print("Warning: failed to write a log")
         }
     }
-    
-    public func log(_ level: BBBLogLevel, _ date: Date, _ message: String, _ function: String, _ file: String, _ line: Int) {
-
-    }
 }
 
 class BBBLoggerTests: XCTestCase {
